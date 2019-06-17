@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/img_bg_my_head"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/icon_back_white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/str_trade_account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_normal"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="center" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/img_bg_my_bottom">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="-130dp"
+                android:background="@drawable/shape_bg_white"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/style_layout_my_item_no_bg">
+
+                    <TextView
+                        style="@style/style_textview_my"
+                        android:gravity="left"
+                        android:text="@string/str_trade_account" />
+
+                    <ImageView
+                        android:id="@+id/ivAssetEyeTrade"
+                        style="@style/style_layout_my_image"
+                        android:src="@mipmap/icon_eye_close" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_layout_my_item_no_bg">
+
+                    <TextView
+                        android:id="@+id/tvAssetMoneyTrade"
+                        style="@style/style_font_normal_black"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:gravity="left"
+                        android:text="0"
+                        android:textSize="@dimen/font_xlager" />
+
+                    <TextView
+                        style="@style/style_font_normal_black"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:text="CNY"
+                        android:textSize="@dimen/font_mini" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_layout_my_item_no_bg">
+
+                    <TextView
+                        android:id="@+id/tvAssetMoneyTradeBail"
+                        style="@style/style_font_xxlarger"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text=""
+                        android:textSize="@dimen/font_small" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/style_layout_my_item_no_bg">
+
+                    <LinearLayout
+                        android:id="@+id/llAssetMoneyTradeRecharge"
+                        style="@style/style_font_normal_weight"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:gravity="left">
+
+                        <ImageView
+                            style="@style/style_layout_my_image"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/asset_06" />
+
+                        <TextView
+                            style="@style/style_font_normal_black"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:text="@string/str_recharge"
+                            android:textSize="@dimen/font_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llAssetMoneyTradeExtract"
+                        style="@style/style_font_normal_weight"
+                        android:gravity="left">
+
+                        <ImageView
+                            style="@style/style_layout_my_image"
+                            android:scaleType="fitCenter"
+                            android:src="@mipmap/asset_07" />
+
+
+                        <TextView
+                            style="@style/style_font_normal_black"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:text="@string/str_extract"
+                            android:textSize="@dimen/font_small" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_bg_white"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyViewCion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_bg_white"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/style_layout_my_item_no_bg">
+
+                    <TextView
+                        style="@style/style_textview_my"
+                        android:gravity="left"
+                        android:text="@string/str_assets_base_record" />
+
+                    <ImageView
+                        android:id="@+id/ivAssetTrade"
+                        style="@style/style_layout_my_image"
+                        android:src="@mipmap/icon_select" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyViewRecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

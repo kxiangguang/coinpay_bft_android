@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout style="@style/style_edit_login">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:text="@string/str_select_coin"
+                android:textColor="@color/font_grey_a5a5a5"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/tvCoin"
+                style="@style/style_font_normal_weight"
+                android:layout_marginLeft="5dp"
+                android:drawableRight="@mipmap/icon_drop"
+                android:gravity="left" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_bg_edit_login"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/style_font_normal"
+                        android:text="@string/str_from"
+                        android:textColor="@color/font_grey_a5a5a5"
+                        android:textSize="@dimen/font_15sp" />
+
+                    <TextView
+                        android:id="@+id/tvFromAccount"
+                        style="@style/style_font_normal_weight"
+                        android:gravity="center_horizontal"
+                        android:text="@string/str_base_account"
+                        android:textSize="@dimen/font_15sp" />
+                </LinearLayout>
+
+                <View
+                    style="@style/style_horizon_line"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/style_font_normal"
+                        android:text="@string/str_to"
+                        android:textColor="@color/font_grey_a5a5a5"
+                        android:textSize="@dimen/font_small" />
+
+                    <TextView
+                        android:id="@+id/tvToAccount"
+                        style="@style/style_font_normal_weight"
+                        android:gravity="center_horizontal"
+                        android:text="@string/str_trade_account"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/icon_transfer" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_layout_my_item">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:text="@string/str_transfer_count"
+                android:textColor="@color/font_grey_a5a5a5"
+                android:textSize="@dimen/font_15sp" />
+
+            <EditText
+                android:id="@+id/edtNumber"
+                style="@style/style_edit_login"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:id="@+id/tvGetUnit"
+                style="@style/style_font_normal"
+                android:text="USDT"
+                android:textColor="@color/font_main_title" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_layout_my_item">
+
+            <TextView
+                android:id="@+id/tvBalance"
+                style="@style/style_font_normal_weight"
+                android:layout_gravity="center_vertical"
+                android:gravity="left"
+                android:text="可转余额"
+                android:textColor="@color/font_grey_a5a5a5"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:id="@+id/tvAll"
+                style="@style/style_font_normal"
+                android:layout_gravity="center_vertical"
+                android:text="@string/str_all"
+                android:textColor="@color/bg_btn_normal"
+                android:textSize="@dimen/font_small" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/style_layout_my_item">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:minWidth="90dp"
+                android:text="@string/str_asset_pwd"
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_15sp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                style="@style/style_font_normal_weight"
+                android:background="@color/transparent"
+                android:gravity="left"
+                android:hint="@string/str_asset_pwd"
+                android:inputType="numberPassword"
+                android:maxLength="6" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSure"
+        style="@style/style_btn_option_normal"
+        android:layout_margin="20dp"
+        android:text="@string/str_sure" />
+
+</LinearLayout>

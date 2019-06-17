@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <include layout="@layout/view_head" />
+
+    <TextView
+        style="@style/style_layout_my_item"
+        android:background="@color/bg_main"
+        android:text="@string/str_change_bind_phone_num_tag"
+        android:textColor="@color/font_main_content"
+        android:textSize="@dimen/font_small" />
+
+    <LinearLayout
+        android:id="@+id/llCanReceive"
+        style="@style/style_layout_my_item">
+
+        <TextView
+            style="@style/style_font_normal_weight"
+            android:gravity="left"
+            android:text="@string/str_receive_phone_code"
+            android:textColor="@color/font_main_title"
+            android:textSize="@dimen/font_15sp" />
+
+        <ImageView style="@style/icon_more" />
+
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+    <LinearLayout
+        android:id="@+id/llCannotReceive"
+        style="@style/style_layout_my_item">
+
+        <TextView
+            style="@style/style_font_normal_weight"
+            android:gravity="left"
+            android:text="@string/str_unreceive_phone_code"
+            android:textSize="15sp" />
+
+        <ImageView style="@style/icon_more" />
+
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+</LinearLayout>

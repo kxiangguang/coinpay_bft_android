@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/layout_my_info">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="一键买币"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_my_info">
+
+            <TextView
+                style="@style/style_font_small_grey"
+                android:gravity="center"
+                android:text="费率: " />
+
+            <TextView
+                android:id="@+id/tvRate"
+                style="@style/style_font_small_grey"
+                android:gravity="center"
+                android:text="0.00%"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                style="@style/style_font_small_grey"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:gravity="center"
+                android:text="汇率 ≈ " />
+
+            <TextView
+                android:id="@+id/tvRateChange"
+                style="@style/style_font_small_grey"
+                android:gravity="center"
+                android:text="0 CNY"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal" />
+        </LinearLayout>
+
+        <View style="@style/style_horizon_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llFirstLayout"
+                style="@style/layout_my_info"
+                android:layout_height="60dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/tvCoinName1"
+                    style="@style/textview_tag"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:layout_marginRight="@dimen/dp_6"
+                    android:gravity="center|left"
+                    android:minWidth="50dp"
+                    android:text="CNY"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etCount1"
+                    style="@style/edittext_normal"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center|right"
+                    android:hint="请输入金额"
+                    android:inputType="numberDecimal"
+                    android:minWidth="100dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/font_grey_a5a5a5"
+                    android:textCursorDrawable="@drawable/text_cuser_drawable_blue"
+                    android:textSize="@dimen/font_normal" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSecondLayout"
+                style="@style/layout_my_info"
+                android:layout_height="60dp"
+                android:layout_below="@id/llFirstLayout"
+                android:background="@color/bg_main"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/tvCoinName2"
+                    style="@style/textview_tag"
+                    android:layout_marginLeft="@dimen/dp_6"
+                    android:layout_marginRight="@dimen/dp_6"
+                    android:gravity="center|left"
+                    android:minWidth="50dp"
+                    android:text=""
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etCount2"
+                    style="@style/edittext_normal"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:gravity="center|right"
+                    android:hint="货币数量"
+                    android:inputType="numberDecimal"
+                    android:minWidth="100dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/font_grey_a5a5a5"
+                    android:textSize="@dimen/font_normal" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivChange"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/icon_change" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvBuy"
+        style="@style/style_btn_option_normal"
+        android:layout_margin="20dp"
+        android:text="立即购买" />
+
+</LinearLayout>

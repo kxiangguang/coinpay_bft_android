@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_head" />
+
+    <LinearLayout style="@style/layout_my_info">
+
+        <TextView
+            style="@style/textview_tag"
+            android:minWidth="90dp"
+            android:text="@string/str_my_set_invite_code"
+            android:textColor="@color/font_main_title" />
+
+        <EditText
+            android:id="@+id/etAccountPwd"
+            style="@style/style_edit_login"
+            android:hint="@string/str_my_set_invite_code_tag"
+            android:inputType="numberPassword"
+            android:maxLength="6" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvSet"
+        style="@style/style_btn_option_normal"
+        android:layout_margin="20dp"
+        android:text="@string/str_sure" />
+
+</LinearLayout>
+

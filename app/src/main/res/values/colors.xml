@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4c7af3</color>
+    <color name="colorPrimaryDark">#4c7af3</color>
+    <color name="colorAccent">#4c7af3</color>
+
+    <!--字体色-->
+    <color name="font_main_title">#313131</color>
+    <color name="font_main_content">#92919a</color>
+    <color name="font_sec_content">#5a5d7d</color>
+    <color name="font_hint">#b0b3b9</color>
+    <color name="font_des">#ebfeff</color>
+    <color name="font_sec_title">#49444f</color>
+    <color name="font_green">#5fc45d</color>
+    <color name="font_red">#FD5858</color>
+    <color name="font_yellow">#ec870e</color>
+    <color name="font_wallet_tag">#98befa</color>
+    <color name="font_tag">#d4d3d3</color>
+    <color name="main_head_bg">#1c1e30</color><!--应用头部背景色-->
+    <color name="main_font_content">#5e5f63</color><!--一号内容色-->
+    <color name="btn_enable">#142537</color><!--按钮不可用时的颜色-->
+    <color name="btn_normal">#f1a200</color><!--按钮可用时的颜色-->
+    <color name="sec_font_title">#3B3B3B</color><!--二号标题色-->
+
+
+    <!--背景色-->
+    <color name="bg_edittext">#f4f6f7</color>
+    <color name="base_bg_btn_enable">#232540</color>
+    <color name="bg_home">#1565d5</color>
+    <color name="bg_main">#F4F5F9</color>
+    <color name="bg_btn_normal">#4c7af3</color>
+    <color name="bg_btn_hover">#6a99e4</color>
+    <color name="bg_line">#ebebeb</color>
+    <color name="bg_start_order">#6aa0ff</color>
+    <color name="bg_main_head">#1d75eb</color>
+    <color name="bg_tab_indicator">#ffcc24</color>
+    <color name="home_text_color_nol">#545454</color>
+    <color name="home_text_color_accept">#25E4AB</color>
+    <color name="color_12000000">#12000000</color>
+    <color name="bg_green_half">#E3F7EF</color>
+    <color name="color_half">#99999999</color>
+
+
+</resources>

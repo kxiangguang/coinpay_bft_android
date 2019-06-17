@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rgGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_20">
+
+        <RadioButton
+            android:id="@+id/rbAll"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_radio_button_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/str_all"
+            android:textColor="@color/my_order_text_selector"
+            android:textSize="15dip" />
+
+        <RadioButton
+            android:id="@+id/rbRu"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_weight="1"
+            android:background="@drawable/shape_radio_button_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/str_duiru"
+            android:textColor="@color/my_order_text_selector"
+            android:textSize="15dip" />
+
+        <RadioButton
+            android:id="@+id/rbChu"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_weight="1"
+            android:background="@drawable/shape_radio_button_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/str_duichu"
+            android:textColor="@color/my_order_text_selector"
+            android:textSize="15dip" />
+
+    </RadioGroup>
+
+</RelativeLayout>

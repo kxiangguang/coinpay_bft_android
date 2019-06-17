@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="@dimen/dp_72"
+            android:layout_height="@dimen/dp_72"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvVersionName"
+            style="@style/style_font_small_grey"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/app_name"
+            android:textColor="@color/font_sec_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llHelp"
+        style="@style/style_layout_my_item"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            style="@style/style_font_normal_black"
+            android:text="@string/str_my_about_help"
+            android:textColor="@color/font_sec_content"
+            android:textSize="@dimen/font_15sp" />
+
+        <TextView
+            style="@style/style_font_normal_weight"
+            android:textColor="@color/font_sec_content"
+            android:textSize="@dimen/font_15sp" />
+
+        <ImageView style="@style/icon_more" />
+
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+    <LinearLayout
+        android:id="@+id/llVersion"
+        style="@style/style_layout_my_item">
+
+        <TextView
+            style="@style/style_font_normal_black"
+            android:text="@string/str_my_about_version"
+            android:textColor="@color/font_sec_content"
+            android:textSize="@dimen/font_15sp" />
+
+
+        <TextView
+            android:id="@+id/tvVersion"
+            style="@style/style_font_normal_weight"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="V1.0.0"
+            android:textColor="@color/font_sec_content"
+            android:textSize="@dimen/font_15sp" />
+
+        <ImageView style="@style/icon_more" />
+
+    </LinearLayout>
+
+</LinearLayout>

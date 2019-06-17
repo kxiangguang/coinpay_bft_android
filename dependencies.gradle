@@ -1,0 +1,61 @@
+def supportVersion = "27.1.0"
+def okHttpVersion = "3.9.0"
+def butterKnifeVersion = "8.8.1"
+def routerVersion = "0.2.3"
+
+project.ext {
+
+    dependencies = [
+            //android-support
+            "support-v4"                  : "com.android.support:support-v4:${supportVersion}",
+            "appcompat-v7"                : "com.android.support:appcompat-v7:${supportVersion}",
+            "design"                      : "com.android.support:design:${supportVersion}",
+            "recyclerview-v7"             : "com.android.support:recyclerview-v7:${supportVersion}",
+            "cardview-v7"                 : "com.android.support:cardview-v7:${supportVersion}",
+            "constraint-layout"           : "com.android.support.constraint:constraint-layout:1.0.2",
+
+            //java8-support
+            "stream"                      : "com.annimon:stream:1.0.8",
+
+            //router
+            "router"                      : "com.baronzhang.android:router:${routerVersion}",
+            "router-compiler"             : "com.baronzhang.android:router-compiler:${routerVersion}",
+
+            //butterKnife
+            "butterknife"                 : "com.jakewharton:butterknife:${butterKnifeVersion}",
+            "butterknife-compiler"        : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+
+            //okHttp3
+            "okhttp3"                     : "com.squareup.okhttp3:okhttp:${okHttpVersion}",
+            "okhttp3-okhttp-urlconnection": "com.squareup.okhttp3:okhttp-urlconnection:${okHttpVersion}",
+
+            //others
+            "ormlite-android"             : "com.j256.ormlite:ormlite-android:5.0",
+            "fastjson"                    : "com.alibaba:fastjson:1.2.31",
+            "gson"                        : "com.google.code.gson:gson:2.8.2",
+            "permission"                  : "com.yanzhenjie:permission:2.0.0-rc12",
+            "adapter_viewholder"          : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34",
+            "immersionBar"                : "com.gyf.barlibrary:barlibrary:2.3.0",
+
+            //dialog
+            "FlycoDialog_Lib"             : "com.flyco.dialog:FlycoDialog_Lib:1.2.6@aar",
+            "nineold"                     : "com.nineoldandroids:library:2.4.0",
+
+            //zxing
+            //"zxing"                       : "com.google.zxing:core:3.3.0",
+
+            //glide
+            "glide"                        : "com.github.bumptech.glide:glide:3.7.0",
+
+            //eventbus
+            "eventbus"                     : "de.greenrobot:eventbus:2.4.0",
+            //zxing
+            "zxing"                        : "com.github.yuzhiqiang1993:zxing:2.2.5",
+
+            "bugly"                        : "com.tencent.bugly:crashreport:latest.release",
+
+            "bugly_ndk"                    : "com.tencent.bugly:nativecrashreport:latest.release",
+
+
+    ]
+}

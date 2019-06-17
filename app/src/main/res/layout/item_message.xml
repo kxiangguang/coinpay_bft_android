@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_not_finish" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/style_font_normal_weight"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="订单信息" />
+
+        <TextView
+            android:id="@+id/tvCreateTime"
+            style="@style/style_font_normal_grey"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="15:34:00 04/15" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContent"
+        style="@style/style_font_normal_grey"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="15:34:00 04/15" />
+
+    <View style="@style/style_horizon_line" />
+
+</LinearLayout>

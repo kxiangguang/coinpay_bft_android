@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_global_item_selector"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/tvLevel"
+            style="@style/style_font_normal"
+            android:text=""
+            android:textColor="@color/font_main_title" />
+
+        <TextView
+            android:id="@+id/tvAdd"
+            style="@style/style_font_normal_weight"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/ivMore"
+            android:layout_toRightOf="@+id/tvLevel"
+            android:text="@string/str_add"
+            android:textColor="@color/bg_btn_normal" />
+
+        <ImageView
+            android:id="@+id/ivMore"
+            style="@style/icon_more"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/tvLevelInfo"
+            style="@style/style_font_normal_weight"
+            android:layout_below="@+id/tvLevel"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text=""
+            android:textColor="@color/font_main_content"
+            android:textSize="@dimen/font_small" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivLine"
+        style="@style/style_horizon_line" />
+</LinearLayout>

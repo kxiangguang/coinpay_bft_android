@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_main"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/str_check_tag"
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/str_self"
+                android:textColor="@color/font_main_title"
+                android:textSize="@dimen/font_small" />
+
+            <LinearLayout
+                android:id="@+id/llSelf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_bg_stroke">
+
+                <ImageView
+                    android:id="@+id/ivSelf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/img_bg_up" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/str_assets"
+                android:textColor="@color/font_main_title"
+                android:textSize="@dimen/font_small" />
+
+            <LinearLayout
+                android:id="@+id/llAssets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_bg_stroke">
+
+                <ImageView
+                    android:id="@+id/ivAssets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/img_bg_up" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:text="@string/str_read"
+            android:textColor="@color/font_sec_title"
+            android:textSize="@dimen/font_mini" />
+
+        <TextView
+            android:id="@+id/tvAgreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkbox"
+            android:layout_alignBottom="@+id/checkbox"
+            android:layout_alignStart="@+id/checkbox"
+            android:layout_marginStart="118dp"
+            android:text="@string/str_agreement"
+            android:textColor="@color/bg_btn_normal"
+            android:textSize="@dimen/font_mini" />
+
+        <TextView
+            android:id="@+id/tvApplyNow"
+            style="@style/style_btn_option_normal"
+            android:layout_below="@id/checkbox"
+            android:layout_margin="20dp"
+            android:text="@string/str_apply_now" />
+
+    </RelativeLayout>
+
+</LinearLayout>

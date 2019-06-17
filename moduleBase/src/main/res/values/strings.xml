@@ -1,0 +1,16 @@
+<resources>
+    <!--异常-->
+    <string name="str_connection_out">网络请求超时，请重试</string>
+    <string name="str_connection_error">连接异常</string>
+    <string name="str_server_error">服务器异常</string>
+    <string name="str_json_error">数据格式错误</string>
+    <string name="str_no_permission">未获取权限，无法使用相关功能</string>
+    <string name="str_please_check_net">请检查网络连接状态</string>
+
+    <!--请求提示语-->
+    <string name="str_loading">加载中...</string>
+
+    <!--验证码-->
+    <string name="str_send_code">发送验证码</string>
+    <string name="str_resend_code">s</string>
+</resources>

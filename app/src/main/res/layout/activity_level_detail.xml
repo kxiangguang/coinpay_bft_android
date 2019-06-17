@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llNotice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/bg_main"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivNoticeIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_check" />
+
+                <TextView
+                    android:id="@+id/tvNotice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/font_main_content"
+                    android:textSize="@dimen/font_small" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/str_self"
+                android:textColor="@color/font_main_title"
+                android:textSize="@dimen/font_small" />
+
+            <LinearLayout
+                android:id="@+id/llSelf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_bg_stroke">
+
+                <ImageView
+                    android:id="@+id/ivSelf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/img_bg_up" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/str_assets"
+                android:textColor="@color/font_main_title"
+                android:textSize="@dimen/font_small" />
+
+            <LinearLayout
+                android:id="@+id/llAssets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_bg_stroke">
+
+                <ImageView
+                    android:id="@+id/ivAssets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/img_bg_up" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvApply"
+            style="@style/style_btn_option_normal"
+            android:layout_margin="20dp"
+            android:text="@string/str_apply" />
+    </RelativeLayout>
+
+</LinearLayout>

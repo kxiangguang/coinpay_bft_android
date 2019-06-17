@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <include layout="@layout/view_head" />
+
+    <LinearLayout style="@style/style_layout_my_item">
+
+        <TextView
+            style="@style/style_font_normal"
+            android:minWidth="90dp"
+            android:text="@string/str_select_coin"
+            android:textColor="@color/font_main_content"
+            android:textSize="@dimen/font_15sp" />
+
+        <TextView
+            android:id="@+id/tvCoin"
+            style="@style/style_font_normal_weight"
+            android:gravity="left"
+            android:text=""
+            android:textSize="@dimen/font_15sp" />
+
+        <ImageView style="@style/icon_more" />
+
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+    <LinearLayout
+        style="@style/style_layout_my_item"
+        android:paddingRight="0dp">
+
+        <TextView
+            style="@style/style_font_normal"
+            android:minWidth="90dp"
+            android:text="@string/str_extract_addr"
+            android:textColor="@color/font_main_content"
+            android:textSize="@dimen/font_15sp" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            style="@style/style_font_normal_weight"
+            android:background="@color/transparent"
+            android:gravity="left"
+            android:hint="@string/str_enter_address_tag"
+            android:textSize="@dimen/font_15sp" />
+
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+    <LinearLayout
+        style="@style/style_layout_my_item"
+        android:paddingRight="0dp">
+
+        <TextView
+            style="@style/style_font_normal"
+            android:minWidth="90dp"
+            android:text="@string/str_remark"
+            android:textColor="@color/font_main_content"
+            android:textSize="@dimen/font_15sp" />
+
+        <EditText
+            android:id="@+id/etRemark"
+            style="@style/style_font_normal_weight"
+            android:background="@color/transparent"
+            android:gravity="left"
+            android:hint="@string/str_please_input_remark"
+            android:textSize="@dimen/font_15sp" />
+
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvAdd"
+        style="@style/style_btn_option_normal"
+        android:layout_margin="20dp"
+        android:text="@string/str_extract_add" />
+
+</LinearLayout>

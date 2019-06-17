@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_pay_bottom"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPayTag"
+                style="@style/style_font_normal"
+                android:drawableLeft="@mipmap/icon_bank"
+                android:drawablePadding="5dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/str_ali"
+                android:textColor="@color/font_main_title" />
+
+            <TextView
+                android:id="@+id/tvJump"
+                style="@style/style_font_normal_weight"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/icon_more"
+                android:text="@string/str_open_ali"
+                android:textSize="@dimen/font_small" />
+        </LinearLayout>
+
+        <ImageView
+            style="@style/style_horizon_line"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:text="@string/str_rec"
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:id="@+id/tvRec"
+                style="@style/style_font_normal_weight"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textSize="@dimen/font_small" />
+
+            <ImageView
+                android:id="@+id/tvRecCopy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:src="@mipmap/icon_copy" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:text="@string/str_rec_account"
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:id="@+id/tvRecAccount"
+                style="@style/style_font_normal_weight"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/font_small" />
+
+            <ImageView
+                android:id="@+id/tvRecAccountCopy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:src="@mipmap/icon_copy" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/str_rec_code"
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_small" />
+
+            <ImageView
+                android:id="@+id/ivRecCode"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="@dimen/dp_10"
+                android:src="@mipmap/icon_qr_code"
+                android:layout_gravity="right|center_vertical"
+                android:textSize="@dimen/font_small" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:text="@string/str_pay_num"
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:id="@+id/tvPayRefer"
+                style="@style/style_font_normal_weight"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/font_small" />
+
+            <ImageView
+                android:id="@+id/tvPayReferCopy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:src="@mipmap/icon_copy" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:text="@string/str_remark"
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:id="@+id/tvRemarkTag"
+                style="@style/style_font_normal_weight"
+                android:layout_marginLeft="10dp"
+                android:text="@string/str_pay_remark"
+                android:textSize="@dimen/font_small" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

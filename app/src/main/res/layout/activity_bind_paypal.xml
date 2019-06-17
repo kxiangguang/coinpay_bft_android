@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <include layout="@layout/view_head" />
+
+    <LinearLayout
+        style="@style/layout_my_info"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/style_font_normal_black"
+            android:minWidth="100dp"
+            android:text="@string/str_name" />
+
+        <EditText
+            android:id="@+id/etName"
+            style="@style/style_edit_login"
+            android:text="" />
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+
+    <LinearLayout
+        android:id="@+id/llPaypal"
+        style="@style/layout_my_info">
+
+        <TextView
+            android:id="@+id/tvAccount"
+            style="@style/style_font_normal_black"
+            android:minWidth="100dp"
+            android:text="@string/str_paypal" />
+
+        <EditText
+            android:id="@+id/etAccount"
+            style="@style/style_edit_login"
+            android:hint="@string/str_paypal_tip" />
+
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+    <LinearLayout style="@style/layout_my_info">
+
+        <TextView
+            style="@style/style_font_normal_black"
+            android:minWidth="100dp"
+            android:text="@string/text_money_pwd" />
+
+        <EditText
+            android:id="@+id/etPwd"
+            style="@style/style_edit_login"
+            android:hint="@string/str_please_input_assets_pwd"
+            android:inputType="numberPassword"
+            android:maxLength="6" />
+
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+    <LinearLayout style="@style/layout_my_info">
+
+        <TextView
+            style="@style/style_font_normal_black"
+            android:minWidth="90dp"
+            android:text="@string/str_account_day_input" />
+
+        <EditText
+            android:id="@+id/etDay"
+            style="@style/style_edit_login"
+            android:hint="@string/str_account_day_input_tag"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+    <LinearLayout
+        style="@style/layout_my_info"
+        android:layout_marginTop="@dimen/dp_10"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/style_font_normal_black"
+            android:minWidth="90dp"
+            android:text="@string/str_account_wart" />
+
+        <EditText
+            android:id="@+id/etWarn"
+            style="@style/style_edit_login"
+            android:hint="@string/str_account_wart_input" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/style_horizon_line"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvConfirm"
+        style="@style/style_btn_option_normal"
+        android:layout_margin="20dp"
+        android:text="@string/str_save" />
+</LinearLayout>

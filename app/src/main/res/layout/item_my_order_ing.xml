@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@drawable/shape_bg_white"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:minWidth="40dp"
+            android:src="@mipmap/icon_duichu" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTypeCNY"
+                style="@style/style_font_small_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_duichu_cny" />
+
+            <TextView
+                android:id="@+id/tvCount"
+                style="@style/style_font_xxlarger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/font_red" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <View
+                style="@style/style_vertical_line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/status_selector" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvOrderCreate"
+            style="@style/style_font_small_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/str_create_time"
+            android:textColor="@color/font_grey_a5a5a5" />
+
+        <TextView
+            android:id="@+id/tvOrderCreateTime"
+            style="@style/style_font_normal_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:textSize="@dimen/font_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <View
+                style="@style/style_vertical_line"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/ivProcess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/status_selector" />
+
+            <View
+                android:id="@+id/viewProcess"
+                style="@style/style_vertical_line"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/ivProcess"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvPay"
+            style="@style/style_font_small_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/str_wait_pay"
+            android:textColor="@color/font_grey_a5a5a5" />
+
+        <TextView
+            android:id="@+id/tvPayTime"
+            style="@style/style_font_normal_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:textSize="@dimen/font_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRelease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <View
+                style="@style/style_vertical_line"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/status_selector" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvRealease"
+            style="@style/style_font_small_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="@string/str_need_release"
+            android:textColor="@color/font_grey_a5a5a5" />
+
+        <TextView
+            android:id="@+id/tvRealeaseTime"
+            style="@style/style_font_normal_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:textSize="@dimen/font_small" />
+    </LinearLayout>
+
+</LinearLayout>

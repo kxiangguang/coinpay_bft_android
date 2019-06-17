@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/img_bg_my_head"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/icon_back_white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            android:src="@mipmap/icon_edit" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:background="@mipmap/img_bg_my_bottom"
+                android:paddingLeft="25dp"
+                android:paddingTop="15dp">
+
+                <com.spark.modulebase.widget.CircleImageView
+                    android:id="@+id/ivHead"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/icon_default_header" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/style_font_normal"
+                    android:layout_toEndOf="@id/ivHead"
+                    android:text=""
+                    android:textSize="@dimen/font_normal" />
+
+                <TextView
+                    android:id="@+id/tvLevel"
+                    style="@style/style_font_normal"
+                    android:layout_below="@id/tvName"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/ivHead"
+                    android:text=""
+                    android:textSize="@dimen/font_normal" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="-35dp"
+                android:background="@drawable/shape_bg_white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llMyAssets"
+                    style="@style/style_layout_my_item"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        style="@style/style_layout_my_image"
+                        android:src="@mipmap/icon_my_assets" />
+
+                    <TextView
+                        style="@style/style_textview_my"
+                        android:gravity="left"
+                        android:text="@string/str_my_assast" />
+
+                    <ImageView style="@style/icon_more" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/style_horizon_line"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/llMyOrder"
+                    style="@style/style_layout_my_item"
+                    android:layout_marginTop="@dimen/dp_4">
+
+                    <ImageView
+                        style="@style/style_layout_my_image"
+                        android:src="@mipmap/icon_my_order" />
+
+                    <TextView
+                        style="@style/style_textview_my"
+                        android:gravity="left"
+                        android:text="@string/str_my_order" />
+
+                    <ImageView style="@style/icon_more" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/style_horizon_line"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/llAppeal"
+                    style="@style/style_layout_my_item"
+                     android:layout_marginTop="@dimen/dp_4"
+                    android:visibility="visible">
+
+                    <ImageView
+                        style="@style/style_layout_my_image"
+                        android:src="@mipmap/icon_my_appeal" />
+
+                    <TextView
+                        style="@style/style_textview_my"
+                        android:gravity="left"
+                        android:text="@string/str_appeal" />
+
+                    <ImageView style="@style/icon_more" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/style_horizon_line"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/llCdDetify"
+                    style="@style/style_layout_my_item"
+                     android:layout_marginTop="@dimen/dp_4">
+
+                    <ImageView
+                        style="@style/style_layout_my_image"
+                        android:src="@mipmap/icon_my_detify" />
+
+                    <TextView
+                        style="@style/style_textview_my"
+                        android:gravity="left"
+                        android:text="@string/str_detify" />
+
+                    <ImageView style="@style/icon_more" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/style_horizon_line"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/llRec"
+                    style="@style/style_layout_my_item"
+                    android:layout_marginBottom="10dp"
+                     android:layout_marginTop="@dimen/dp_4">
+
+                    <ImageView
+                        style="@style/style_layout_my_image"
+                        android:src="@mipmap/icon_my_rec" />
+
+                    <TextView
+                        style="@style/style_textview_my"
+                        android:gravity="left"
+                        android:text="@string/str_rec_way" />
+
+                    <ImageView style="@style/icon_more" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_bg_white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llSafe"
+                    style="@style/style_layout_my_item"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        style="@style/style_layout_my_image"
+                        android:src="@mipmap/icon_my_safe" />
+
+                    <TextView
+                        style="@style/style_textview_my"
+                        android:gravity="left"
+                        android:text="@string/str_my_safe" />
+
+                    <ImageView style="@style/icon_more" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/style_horizon_line"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/llSetting"
+                    style="@style/style_layout_my_item"
+                     android:layout_marginTop="@dimen/dp_4">
+
+                    <ImageView
+                        style="@style/style_layout_my_image"
+                        android:src="@mipmap/icon_my_seeting" />
+
+                    <TextView
+                        style="@style/style_textview_my"
+                        android:gravity="left"
+                        android:text="@string/str_my_setting" />
+
+                    <ImageView style="@style/icon_more" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/style_horizon_line"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/llAbout"
+                    style="@style/style_layout_my_item"
+                    android:layout_marginBottom="10dp"
+                     android:layout_marginTop="@dimen/dp_4">
+
+                    <ImageView
+                        style="@style/style_layout_my_image"
+                        android:src="@mipmap/icon_my_about" />
+
+                    <TextView
+                        style="@style/style_textview_my"
+                        android:gravity="left"
+                        android:text="@string/str_about_us" />
+
+                    <ImageView style="@style/icon_more" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

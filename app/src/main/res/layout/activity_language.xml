@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_head" />
+
+    <LinearLayout
+        android:id="@+id/llChinese"
+        style="@style/layout_my_info"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/style_font_normal_weight"
+            android:gravity="left"
+            android:text="@string/str_my_set_chinese" />
+
+        <ImageView
+            android:id="@+id/ivChinese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/icon_set_finish"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+    <LinearLayout
+        android:id="@+id/llEnglish"
+        style="@style/layout_my_info">
+
+        <TextView
+            style="@style/style_font_normal_weight"
+            android:gravity="left"
+            android:text="@string/str_my_set_english" />
+
+        <ImageView
+            android:id="@+id/ivEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/icon_set_finish"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+
+</LinearLayout>

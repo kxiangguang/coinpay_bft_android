@@ -1,0 +1,145 @@
+apply plugin: 'com.android.application'
+
+//获取打包时间
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyy_MM_dd')
+    return formattedDate
+}
+
+def verName = "2.2.7"
+def versioncode = 227
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.spark.coinpay"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode versioncode
+        versionName verName
+        // dex突破65535的限制
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+    signingConfigs {
+        debug {
+            storeFile file("..\\spark.jks")
+            storePassword "spark123"
+            keyAlias "spark"
+            keyPassword "spark123"
+        }
+        release {
+            storeFile file("..\\spark.jks")
+            storePassword "spark123"
+            keyAlias "spark"
+            keyPassword "spark123"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            // 开启ZipAlign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = "蚂蚁搬砖" + verName + ".apk"
+                        outputFileName = fileName
+                    }
+                }
+            }
+        }
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            versionNameSuffix ""
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            // 混淆文件位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+            //设置id可以同时安装多个应用
+            //币承兑bitpay-bitpay
+//            applicationIdSuffix "bipay"
+            //合众承兑bitpay-hf
+//            applicationIdSuffix "hfbipay"
+            //亿易商贸bitpay-db
+//            applicationIdSuffix "dbipay"
+            //通支付bitpay-t
+//            applicationIdSuffix "tbipay"
+            //压力承兑bitpay-yl
+//            applicationIdSuffix "test3bipay"
+            //币承兑bitpay-xj
+//            applicationIdSuffix "xjbipay"
+            //欧沃bitpay-over
+//            applicationIdSuffix "overbipay"
+            //币支付bitpay-bitpay
+//            applicationIdSuffix "bitpay"
+            //鑫众支付bitpay-xz
+//            applicationIdSuffix "xzbitpay"
+            //Money承兑bitpay-money
+//            applicationIdSuffix "moneybitpay"
+            //蚂蚁搬砖bitpay-bft
+            applicationIdSuffix "bftbitpay"
+            //网思bitpay-ws
+//            applicationIdSuffix "wsbitpay"
+        }
+    }
+    //检查错误
+    lintOptions {
+        //关闭打包错误
+        checkReleaseBuilds false
+        abortOnError false //遇到错误继续
+        disable 'InvalidPackage'
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/notice.txt'
+    }
+    configurations.all {
+        // check for updates every build
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile(name: 'geetest_testbutton_android_v3.5.3', ext: 'aar')
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+    compile rootProject.ext.dependencies["FlycoDialog_Lib"]
+    compile rootProject.ext.dependencies["nineold"]
+    compile rootProject.ext.dependencies["bugly"]
+    compile rootProject.ext.dependencies["bugly_ndk"]
+
+    implementation project(':moduleLogin')
+    implementation project(':moduleUc')
+    implementation project(':moduleOtc')
+    implementation project(':moduleAssets')
+
+}

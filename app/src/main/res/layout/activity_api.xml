@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:gravity="center"
+            android:text="选择地址"
+            android:textColor="@color/font_tab_head_selector"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/tvWrite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:gravity="center"
+            android:text="填写地址"
+            android:textColor="@color/font_tab_head_selector"
+            android:textSize="@dimen/font_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSelect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10"
+        android:visibility="visible">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llWrite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etUc"
+            style="@style/style_edit_login"
+            android:digits="0123456789."
+            android:hint="uc"
+            android:inputType="number"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/etAc"
+            style="@style/style_edit_login"
+            android:layout_marginTop="@dimen/dp_4"
+            android:digits="0123456789."
+            android:hint="ac"
+            android:inputType="number"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/etAcceptance"
+            style="@style/style_edit_login"
+            android:layout_marginTop="@dimen/dp_4"
+            android:digits="0123456789."
+            android:hint="acceptance"
+            android:inputType="number"
+            android:text="" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            style="@style/style_btn_option_normal"
+            android:layout_margin="20dp"
+            android:text="@string/str_sure" />
+
+    </LinearLayout>
+
+</LinearLayout>

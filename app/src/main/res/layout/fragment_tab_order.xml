@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/productGroup_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/wait_mycheck"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="进行中"
+            android:textColor="@color/main_bottom_home_text_selector"
+            android:textSize="15dip" />
+
+        <RadioButton
+            android:id="@+id/has_checked"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="已完成"
+            android:textColor="@color/main_bottom_home_text_selector"
+            android:textSize="15dip" />
+
+        <RadioButton
+            android:id="@+id/has_cancel"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="已取消"
+            android:textColor="@color/main_bottom_home_text_selector"
+            android:textSize="15dip" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/id_tab_line_iv_check"
+        android:layout_width="160dp"
+        android:layout_height="2dp"
+        android:layout_alignBottom="@id/productGroup_check"
+        android:background="@color/base_bg_btn_normal"
+        android:contentDescription="tab"/>
+</RelativeLayout>

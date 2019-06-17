@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp">
+
+            <RelativeLayout style="@style/style_edit_login">
+
+                <TextView
+                    style="@style/style_font_normal"
+                    android:text="@string/str_select_coin"
+                    android:textColor="@color/font_grey_a5a5a5"
+                    android:textSize="@dimen/font_15sp" />
+
+                <TextView
+                    android:id="@+id/tvCoin"
+                    style="@style/style_font_normal_weight"
+                    android:layout_marginLeft="5dp"
+                    android:drawableRight="@mipmap/icon_drop"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_bg_edit_login"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="20dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/ivAddress"
+                    android:layout_width="260dp"
+                    android:layout_height="220dp"
+                    android:layout_weight="1"
+                    android:scaleType="center" />
+
+                <TextView
+                    style="@style/style_font_normal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/str_recharge_address"
+                    android:textColor="@color/font_grey_a5a5a5"
+                    android:textSize="@dimen/font_small" />
+
+                <TextView
+                    android:id="@+id/tvAdress"
+                    style="@style/style_font_normal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/font_main_title"
+                    android:textSize="@dimen/font_mini" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvNotice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:drawableLeft="@mipmap/ic_warning"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:gravity="center_vertical"
+                    android:text="@string/str_advatage_tag"
+                    android:textColor="@color/font_grey_a5a5a5"
+                    android:textSize="@dimen/font_mini" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvCopy"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple_btn_global_option_corner_grey_selector"
+                    android:gravity="center"
+                    android:text="@string/str_copy_adderss"
+                    android:textSize="@dimen/font_normal" />
+
+                <TextView
+                    android:id="@+id/tvSave"
+                    style="@style/style_btn_option_normal"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:text="@string/str_save_code" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_bg_edit_login"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/etCount"
+                    style="@style/style_edit_login"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:hint="@string/str_extract_count"
+                    android:inputType="numberDecimal"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPay"
+                style="@style/style_btn_option_normal"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_weight="1"
+                android:text="钱包支付"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            style="@style/style_font_normal_weight"
+            android:gravity="center"
+            android:text="需要验证"
+            android:textSize="@dimen/font_lager" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:src="@mipmap/icon_close" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/ivCode"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:visibility="visible" />
+
+
+        <EditText
+            android:id="@+id/etUsername"
+            style="@style/style_edit_login"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_weight="1"
+            android:hint="请输入图片验证码"
+            android:text="" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLogin"
+        style="@style/style_btn_option_normal"
+        android:layout_margin="20dp"
+        android:text="确定" />
+</LinearLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@mipmap/icon_wait_pay_outime"
+                android:drawablePadding="6dp"
+                android:gravity="left"
+                android:text="@string/str_wait_pay"
+                android:textColor="@color/font_yellow"
+                android:textSize="@dimen/font_lager" />
+
+            <TextView
+                android:id="@+id/tvTag"
+                style="@style/style_font_normal_weight"
+                android:text="关闭"
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/style_edit_login"
+            android:layout_marginBottom="12dp"
+            android:drawableLeft="@mipmap/icon_shop"
+            android:drawablePadding="6dp"
+            android:paddingLeft="10dp"
+            android:text="商店"
+            android:textColor="@color/font_sec_title"
+            android:textSize="@dimen/font_normal" />
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:text="@string/str_rate"
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/tvRate"
+                style="@style/style_font_normal_weight"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/font_15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:text="@string/str_cd_count"
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/tvCdCount"
+                style="@style/style_font_normal_weight"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/font_15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:text="@string/str_all_value"
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/tvAllValue"
+                style="@style/style_font_normal_weight"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/font_15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:text="@string/str_use_count"
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/tvUseCount"
+                style="@style/style_font_normal_weight"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/font_15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:text="@string/str_create_time"
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/tvCreateTime"
+                style="@style/style_font_normal_weight"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/font_15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:text="@string/str_order_num"
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/tvOrderNum"
+                style="@style/style_font_normal_weight"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/font_15sp" />
+
+            <ImageView
+                android:id="@+id/tvCopyOrderNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:src="@mipmap/icon_copy" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:text="@string/str_pay_num"
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/tvPayNum"
+                style="@style/style_font_normal_weight"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/font_15sp" />
+
+            <ImageView
+                android:id="@+id/tvCopyPayNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:src="@mipmap/icon_copy" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/style_layout"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:text="@string/str_remark"
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/tvReamrk"
+                style="@style/style_font_normal_weight"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/font_15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRelease"
+        style="@style/style_btn_option_normal"
+        android:layout_margin="20dp"
+        android:text="@string/str_release" />
+
+</LinearLayout>

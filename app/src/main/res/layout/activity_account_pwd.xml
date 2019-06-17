@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_head" />
+
+    <TextView
+        android:id="@+id/tvTag"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/set_money_pwd_tag"
+        android:textColor="@color/font_main_title" />
+
+    <LinearLayout
+        android:id="@+id/llOldPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout style="@style/layout_my_info">
+
+            <TextView
+                style="@style/textview_tag"
+                android:minWidth="100dp"
+                android:text="@string/old_money_pwd"
+                android:textColor="@color/font_main_title" />
+
+            <EditText
+                android:id="@+id/etOldPwd"
+                style="@style/style_edit_login"
+                android:hint="@string/old_money_pwd"
+                android:inputType="numberPassword"
+                android:maxLength="6" />
+        </LinearLayout>
+
+        <View style="@style/style_horizon_line" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/layout_my_info">
+
+        <TextView
+            android:id="@+id/tvPwdTag"
+            style="@style/textview_tag"
+            android:minWidth="100dp"
+            android:text="@string/text_money_pwd"
+            android:textColor="@color/font_main_title" />
+
+        <EditText
+            android:id="@+id/etAccountPwd"
+            style="@style/style_edit_login"
+            android:hint="@string/text_money_pwd_tag"
+            android:inputType="numberPassword"
+            android:maxLength="6" />
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+    <LinearLayout style="@style/layout_my_info">
+
+        <TextView
+            android:id="@+id/tvRePwdTag"
+            style="@style/textview_tag"
+            android:minWidth="100dp"
+            android:text="@string/confirm_money_pwd"
+            android:textColor="@color/font_main_title" />
+
+        <EditText
+            android:id="@+id/etRepeatPwd"
+            style="@style/style_edit_login"
+            android:hint="@string/confirm_money_pwd"
+            android:inputType="numberPassword"
+            android:maxLength="6" />
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+    <TextView
+        android:id="@+id/tvForgetPas"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="right"
+        android:layout_marginRight="32dp"
+        android:gravity="center"
+        android:text="@string/str_forgot_password"
+        android:textColor="@color/btn_normal"
+        android:textSize="@dimen/font_small"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvSet"
+        style="@style/style_btn_option_normal"
+        android:layout_margin="20dp"
+        android:text="@string/str_sure" />
+
+</LinearLayout>
+

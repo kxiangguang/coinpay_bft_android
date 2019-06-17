@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--app-->
+    <color name="colorModulePrimary">#3F51B5</color>
+    <color name="colorModulePrimaryDark">#303F9F</color>
+    <color name="colorModuleAccent">#FF4081</color>
+
+    <!--常用色-->
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="font_grey_a5a5a5">#a5a5a5</color>
+
+    <!--字体色-->
+    <color name="base_font_main_title">#313131</color>
+    <color name="base_font_main_content">#92919a</color>
+
+    <!--背景色-->
+    <color name="base_bg_loading">#99000000</color>
+    <color name="base_bg_btn_normal">#4c7af3</color>
+    <color name="line_bg_grey">#EAE8E8</color><!--线条颜色-->
+</resources>

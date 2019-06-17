@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_head" />
+
+    <LinearLayout
+        android:id="@+id/llLoginPwd"
+        style="@style/style_layout_my_item"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            style="@style/style_font_normal"
+            android:text="@string/str_login_pwd"
+            android:textColor="@color/font_main_title"
+            android:textSize="@dimen/font_15sp" />
+
+
+        <TextView
+            android:id="@+id/tvLoginPwd"
+            style="@style/style_font_normal_weight"
+            android:layout_marginRight="@dimen/dp_10"
+            android:textColor="@drawable/font_my_info_state_selector"
+            android:textSize="@dimen/font_small"
+            android:visibility="invisible" />
+
+        <ImageView style="@style/icon_more" />
+
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+    <LinearLayout
+        android:id="@+id/llAccountPwd"
+        style="@style/style_layout_my_item">
+
+        <TextView
+            style="@style/style_font_normal"
+            android:text="@string/str_asset_pwd"
+            android:textColor="@color/font_main_title"
+            android:textSize="@dimen/font_15sp" />
+
+
+        <TextView
+            android:id="@+id/tvAcountPwd"
+            style="@style/style_font_normal_weight"
+            android:layout_marginRight="@dimen/dp_10"
+            android:textColor="@drawable/font_my_info_state_selector"
+            android:textSize="@dimen/font_small"
+            android:visibility="invisible" />
+
+        <ImageView style="@style/icon_more" />
+
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

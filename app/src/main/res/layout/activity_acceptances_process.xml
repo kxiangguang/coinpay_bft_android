@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_20">
+
+        <TextView
+            style="@style/style_font_normal_black"
+            android:drawableLeft="@mipmap/icon_auth_tag"
+            android:drawablePadding="@dimen/dp_10"
+            android:text="@string/str_auth_process_1" />
+
+        <TextView
+            style="@style/style_font_small_grey"
+            android:layout_marginTop="@dimen/dp_10"
+            android:lineSpacingExtra="@dimen/dp_4"
+            android:text="@string/str_auth_process_2" />
+
+        <TextView
+            style="@style/style_font_small_grey"
+            android:layout_marginTop="@dimen/dp_10"
+            android:lineSpacingExtra="@dimen/dp_4"
+            android:text="@string/str_auth_process_3" />
+
+        <TextView
+            android:id="@+id/tvAmount"
+            style="@style/style_font_small_grey"
+            android:layout_marginTop="@dimen/dp_10"
+            android:lineSpacingExtra="@dimen/dp_4"
+            android:text="@string/str_auth_process_4" />
+
+        <TextView
+            style="@style/style_font_small_grey"
+            android:layout_marginTop="@dimen/dp_10"
+            android:lineSpacingExtra="@dimen/dp_4"
+            android:text="@string/str_auth_process_5" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:text="@string/str_read"
+            android:textColor="@color/font_sec_title"
+            android:textSize="@dimen/font_mini" />
+
+        <TextView
+            android:id="@+id/tvAgreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkbox"
+            android:layout_alignBottom="@+id/checkbox"
+            android:layout_alignStart="@+id/checkbox"
+            android:layout_marginStart="118dp"
+            android:text="@string/str_agreement"
+            android:textColor="@color/bg_btn_normal"
+            android:textSize="@dimen/font_mini" />
+
+        <TextView
+            android:id="@+id/tvAddNow"
+            style="@style/style_btn_option_normal"
+            android:layout_below="@id/checkbox"
+            android:layout_margin="20dp"
+            android:text="@string/str_add_now" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

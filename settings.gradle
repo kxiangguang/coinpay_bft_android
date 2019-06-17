@@ -1,0 +1,1 @@
+include ':app', ':moduleBase', ':netty_library', ':moduleLogin', ':moduleAssets', ':moduleUc', ':moduleOtc'

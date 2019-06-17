@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="@dimen/dp_10"
+        android:src="@mipmap/icon_close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/shape_bg_edit_login"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etCode"
+            style="@style/style_edit_login"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:hint="@string/str_code"
+            android:inputType="number"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/bg_btn_normal" />
+
+        <TextView
+            android:id="@+id/tvGetCode"
+            style="@style/style_tv_msg_code"
+            android:minWidth="100dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        style="@style/style_btn_option_normal"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_40"
+        android:gravity="center"
+        android:text="确定" />
+</LinearLayout>

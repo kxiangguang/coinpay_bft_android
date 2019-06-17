@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_white"
+    android:gravity="center"
+    android:padding="@dimen/dp_10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            style="@style/style_font_normal_weight"
+            android:gravity="center"
+            android:text="@string/str_assets_reward_desc"
+            android:textSize="@dimen/font_lager" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:src="@mipmap/icon_close" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvDay"
+        style="@style/style_font_normal_weight"
+        android:gravity="left"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/font_sec_content"
+        android:text="@string/str_assets_reward_desc_1" />
+
+    <TextView
+        style="@style/style_font_normal_weight"
+        android:gravity="left"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/font_sec_content"
+        android:text="@string/str_assets_reward_desc_2" />
+
+    <TextView
+        style="@style/style_font_normal_weight"
+        android:gravity="left"
+        android:padding="@dimen/dp_10"
+        android:textColor="@color/font_sec_content"
+        android:text="@string/str_assets_reward_desc_3" />
+
+</LinearLayout>

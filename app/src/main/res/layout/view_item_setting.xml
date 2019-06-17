@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llPay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:background="@drawable/shape_bg_blue"
+    android:orientation="horizontal"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/ivType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvBankName"
+            style="@style/style_font_normal"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tvDayLimit"
+            style="@style/style_font_normal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text=""
+            android:textColor="#b1c4d7"
+            android:textSize="@dimen/font_small" />
+
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/style_font_normal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text=""
+            android:textSize="@dimen/font_small"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvBankNum"
+            style="@style/style_font_normal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text=""
+            android:textSize="@dimen/font_lager" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/switch_pay_selector" />
+
+</LinearLayout>

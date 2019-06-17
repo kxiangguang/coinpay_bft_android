@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <include layout="@layout/view_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/style_layout_my_item">
+
+                <TextView
+                    style="@style/style_font_normal"
+                    android:minWidth="90dp"
+                    android:text="@string/str_extract_coin"
+                    android:textColor="@color/font_main_content"
+                    android:textSize="@dimen/font_15sp" />
+
+                <TextView
+                    android:id="@+id/tvCoin"
+                    style="@style/style_font_normal_weight"
+                    android:gravity="left"
+                    android:text=""
+                    android:textSize="@dimen/font_15sp" />
+
+                <ImageView style="@style/icon_more" />
+
+            </LinearLayout>
+
+            <View style="@style/style_horizon_line" />
+
+            <LinearLayout
+                style="@style/style_layout_my_item"
+                android:paddingRight="0dp">
+
+                <TextView
+                    style="@style/style_font_normal"
+                    android:minWidth="90dp"
+                    android:text="@string/str_extract_addr"
+                    android:textColor="@color/font_main_content"
+                    android:textSize="@dimen/font_15sp" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    style="@style/style_font_normal_weight"
+                    android:layout_weight="1"
+                    android:ellipsize="middle"
+                    android:gravity="left"
+                    android:hint="@string/str_select_address"
+                    android:lines="1"
+                    android:textSize="@dimen/font_small" />
+
+                <ImageView
+                    android:id="@+id/tvScan"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_scan" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/bg_line" />
+
+                <TextView
+                    android:id="@+id/tvSelectAdress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_global_item_selector"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/str_select"
+                    android:textColor="@color/bg_btn_normal"
+                    android:textSize="@dimen/font_small" />
+            </LinearLayout>
+
+            <View style="@style/style_horizon_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/llCount"
+                    style="@style/style_layout_my_item"
+                    android:paddingRight="0dp">
+
+                    <TextView
+                        style="@style/style_font_normal"
+                        android:minWidth="90dp"
+                        android:text="@string/str_extract_count"
+                        android:textColor="@color/font_main_content"
+                        android:textSize="@dimen/font_15sp" />
+
+                    <EditText
+                        android:id="@+id/etCount"
+                        style="@style/style_font_normal_weight"
+                        android:background="@color/transparent"
+                        android:enabled="false"
+                        android:gravity="left"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/font_small" />
+
+                    <TextView
+                        android:id="@+id/tvGetUnit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text=""
+                        android:textColor="@color/font_main_title" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/bg_line" />
+
+                    <TextView
+                        android:id="@+id/tvAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ripple_global_item_selector"
+                        android:padding="10dp"
+                        android:text="@string/str_all"
+                        android:textColor="@color/bg_btn_normal"
+                        android:textSize="@dimen/font_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCount22"
+                    style="@style/style_layout_my_item"
+                    android:background="@color/transparent"
+                    android:paddingRight="0dp">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View style="@style/style_horizon_line" />
+
+            <LinearLayout style="@style/style_layout_my_item">
+
+                <TextView
+                    style="@style/style_font_normal"
+                    android:minWidth="90dp"
+                    android:text="@string/str_extract_fee"
+                    android:textColor="@color/font_main_content"
+                    android:textSize="@dimen/font_15sp" />
+
+                <TextView
+                    android:id="@+id/tvServiceFee"
+                    style="@style/style_font_normal_weight"
+                    android:gravity="left"
+                    android:textSize="@dimen/font_small" />
+
+            </LinearLayout>
+
+            <View style="@style/style_horizon_line" />
+
+            <LinearLayout style="@style/style_layout_my_item">
+
+                <TextView
+                    style="@style/style_font_normal"
+                    android:minWidth="90dp"
+                    android:text="@string/str_extract_rec_count"
+                    android:textColor="@color/font_main_content"
+                    android:textSize="@dimen/font_15sp" />
+
+                <TextView
+                    android:id="@+id/tvFinalCount"
+                    style="@style/style_font_normal_weight"
+                    android:gravity="left"
+                    android:textSize="@dimen/font_small" />
+
+                <TextView
+                    android:id="@+id/tvCollectUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/font_main_title" />
+            </LinearLayout>
+
+            <View style="@style/style_horizon_line" />
+
+            <LinearLayout style="@style/style_layout_my_item">
+
+                <TextView
+                    style="@style/style_font_normal"
+                    android:minWidth="90dp"
+                    android:text="@string/str_asset_pwd"
+                    android:textColor="@color/font_main_content"
+                    android:textSize="@dimen/font_15sp" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    style="@style/style_font_normal_weight"
+                    android:background="@color/transparent"
+                    android:gravity="left"
+                    android:hint="@string/str_please_input_assets_pwd"
+                    android:inputType="numberPassword"
+                    android:maxLength="6" />
+            </LinearLayout>
+
+            <View style="@style/style_horizon_line" />
+
+            <TextView
+                android:id="@+id/tvBalance"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text=""
+                android:textColor="@color/font_main_content"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:id="@+id/tvExtract"
+                style="@style/style_btn_option_normal"
+                android:layout_margin="20dp"
+                android:text="@string/str_extract" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

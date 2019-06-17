@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <!--密码可见与否标志-->
+    <style name="style_iv_eye">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:src">@mipmap/icon_eye_close</item>
+    </style>
+
+    <!--发送验证码-->
+    <style name="style_tv_msg_code">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:text">@string/str_send_code</item>
+        <item name="android:textColor">@color/bg_btn_normal</item>
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <!--登录，注册的输入框-->
+    <style name="style_edit_login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/shape_bg_edit_login</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:inputType">text</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">@color/font_main_title</item>
+        <item name="android:textColorHint">@color/font_hint</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <!--常用按钮-->
+    <style name="style_btn_option_normal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/ripple_btn_global_option_corner_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <!--水平线-->
+    <style name="style_horizon_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/bg_line</item>
+    </style>
+    <!--水平线-->
+    <style name="style_vertical_line">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/bg_line</item>
+    </style>
+    <!--水平线-->
+    <style name="style_horizon_line_blue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/bg_btn_normal</item>
+    </style>
+
+    <!--tab字体-->
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--通用字体-->
+    <style name="style_font_normal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <!--通用小字体-->
+    <style name="style_font_mini">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_mini</item>
+    </style>
+
+    <!--大字体-->
+    <style name="style_font_xxlarger">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/font_green</item>
+        <item name="android:textSize">@dimen/font_xxlager</item>
+    </style>
+
+    <!--通用字体黑色-->
+    <style name="style_font_normal_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/font_main_title</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <!--通用字体灰色-->
+    <style name="style_font_normal_grey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/font_grey_a5a5a5</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <!--通用字体小灰色-->
+    <style name="style_font_small_grey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/font_grey_a5a5a5</item>
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+
+    <!--通用字体-->
+    <style name="style_font_normal_weight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/font_main_title</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColorHint">@color/font_hint</item>
+    </style>
+
+    <!--个人中心item布局-->
+    <style name="style_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--个人中心item布局-->
+    <style name="style_layout_my_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:background">@drawable/ripple_global_item_selector</item>
+    </style>
+
+    <!--个人中心item布局-无背景色-->
+    <style name="style_layout_my_item_no_bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <!--个人中心image布局-->
+    <style name="style_layout_my_image">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <!--更多-->
+    <style name="icon_more">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@mipmap/icon_next</item>
+    </style>
+
+    <style name="style_textview_my" parent="style_font_normal_weight">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">@color/font_sec_content</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!--选中-->
+    <style name="icon_selected">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">13dp</item>
+        <item name="android:src">@mipmap/icon_selected</item>
+    </style>
+
+    <!--我的信息layout-->
+    <style name="layout_my_info">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/font_tag</item>
+    </style>
+
+    <!--每一行的提示语-->
+    <style name="textview_tag">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/font_tag</item>
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <!--通用的输入框格式-->
+    <style name="edittext_normal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/font_tag</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textCursorDrawable">@drawable/text_cuser_drawable</item>
+        <item name="android:textColorHint">@color/main_font_content</item>
+    </style>
+
+    <!--通用字体小红色-->
+    <style name="style_font_small_red">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/font_red</item>
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <!--复制图标样式-->
+    <style name="style_text_copy">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dp_4</item>
+        <item name="android:src">@mipmap/icon_copy</item>
+    </style>
+
+    <!--首页添加弹框-->
+    <style name="AnimTools" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/filter_add_push_in</item>
+        <item name="android:windowExitAnimation">@anim/filter_add_push_out</item>
+    </style>
+
+</resources>

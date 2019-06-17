@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">netty_library</string>
+    <string name="str_connect_error">连接失败</string>
+    <string name="str_connect_success">连接成功</string>
+</resources>

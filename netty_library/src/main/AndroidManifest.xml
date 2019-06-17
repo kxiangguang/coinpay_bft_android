@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spark.netty_library" >
+
+    <application>
+        <receiver android:name=".BootCompleteReceiver" />
+    </application>
+</manifest>

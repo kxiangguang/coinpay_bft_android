@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <include layout="@layout/view_head" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        style="@style/style_layout_my_item"
+        android:layout_height="40dp"
+        android:background="@color/bg_main"
+        android:gravity="center_vertical"
+        android:text="124"
+        android:textColor="@color/font_main_content"
+        android:textSize="@dimen/font_small"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llCountry"
+        style="@style/style_layout_my_item">
+
+        <TextView
+            style="@style/style_font_normal"
+            android:minWidth="90dp"
+            android:text="@string/str_country"
+            android:textColor="@color/font_main_title"
+            android:textSize="@dimen/font_15sp" />
+
+        <TextView
+            android:id="@+id/tvCountry"
+            style="@style/style_font_normal_weight"
+            android:gravity="left"
+            android:text="中国"
+            android:textColor="@color/font_main_title"
+            android:textSize="@dimen/font_15sp" />
+
+        <ImageView style="@style/icon_more" />
+
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+    <LinearLayout
+        android:id="@+id/llPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout style="@style/style_layout_my_item">
+
+            <TextView
+                android:id="@+id/tvAreaCode"
+                style="@style/style_font_normal"
+                android:minWidth="90dp"
+                android:text="手机号"
+                android:textColor="@color/font_main_title"
+                android:textSize="@dimen/font_15sp" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                style="@style/style_font_normal_weight"
+                android:background="@color/transparent"
+                android:hint="@string/str_phone_number"
+                android:inputType="number"
+                android:maxLength="11" />
+        </LinearLayout>
+
+        <View style="@style/style_horizon_line" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/style_layout_my_item">
+
+        <TextView
+            android:id="@+id/oldPhoneName"
+            style="@style/style_font_normal"
+            android:minWidth="90dp"
+            android:text="@string/str_phone_code"
+            android:textColor="@color/font_main_title"
+            android:textSize="@dimen/font_15sp" />
+
+        <EditText
+            android:id="@+id/etCode"
+            style="@style/style_font_normal_weight"
+            android:background="@color/transparent"
+            android:gravity="left"
+            android:hint="@string/str_phone_code"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/bg_btn_normal" />
+
+        <TextView
+            android:id="@+id/tvGetCode"
+            style="@style/style_tv_msg_code"
+            android:minWidth="100dp" />
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+    <LinearLayout
+        android:id="@+id/llChgPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout style="@style/style_layout_my_item">
+
+            <TextView
+                android:id="@+id/tvChgAreaCode"
+                style="@style/style_font_normal"
+                android:minWidth="90dp"
+                android:text="+86>"
+                android:textColor="@color/font_main_title"
+                android:textSize="@dimen/font_15sp" />
+
+            <EditText
+                android:id="@+id/etChgPhone"
+                style="@style/style_font_normal_weight"
+                android:background="@color/transparent"
+                android:gravity="left"
+                android:hint="@string/str_new_phone_number"
+                android:inputType="number"
+                android:maxLength="11" />
+
+        </LinearLayout>
+
+        <View style="@style/style_horizon_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llChgCode"
+        style="@style/style_layout_my_item"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/style_font_normal"
+            android:minWidth="90dp"
+            android:text="@string/str_phone_code"
+            android:textColor="@color/font_main_title"
+            android:textSize="@dimen/font_15sp" />
+
+        <EditText
+            android:id="@+id/etNewCode"
+            style="@style/style_font_normal_weight"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="left"
+            android:hint="@string/str_phone_code"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/bg_btn_normal" />
+
+        <TextView
+            android:id="@+id/tvNewGetCode"
+            style="@style/style_tv_msg_code"
+            android:minWidth="100dp" />
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+    <LinearLayout style="@style/style_layout_my_item">
+
+        <TextView
+            style="@style/style_font_normal"
+            android:minWidth="90dp"
+            android:text="@string/str_login_pwd"
+            android:textColor="@color/font_main_title"
+            android:textSize="@dimen/font_15sp" />
+
+        <EditText
+            android:id="@+id/etPwd"
+            style="@style/style_font_normal_weight"
+            android:background="@color/transparent"
+            android:gravity="left"
+            android:hint="@string/str_login_pwd"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <View style="@style/style_horizon_line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvBind"
+        style="@style/style_btn_option_normal"
+        android:layout_margin="20dp"
+        android:text="@string/str_sure" />
+
+
+</LinearLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <include layout="@layout/view_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/layout_my_info"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/style_font_normal_black"
+                    android:minWidth="100dp"
+                    android:text="@string/str_name" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    style="@style/style_edit_login"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/style_horizon_line" />
+
+            <LinearLayout
+                android:id="@+id/llAli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/layout_my_info">
+
+                    <TextView
+                        style="@style/style_font_normal_black"
+                        android:minWidth="100dp"
+                        android:text="@string/str_ali_account" />
+
+                    <EditText
+                        android:id="@+id/etAccount"
+                        style="@style/style_edit_login"
+                        android:hint="@string/str_ali_tip" />
+
+                </LinearLayout>
+
+                <View style="@style/style_horizon_line" />
+
+                <LinearLayout style="@style/layout_my_info">
+
+                    <TextView
+                        style="@style/style_font_normal_black"
+                        android:minWidth="100dp"
+                        android:text="@string/str_ali_account_nickname" />
+
+                    <EditText
+                        android:id="@+id/etAccountNickName"
+                        style="@style/style_edit_login"
+                        android:hint="@string/str_ali_tip_nickname" />
+
+                </LinearLayout>
+
+                <View style="@style/style_horizon_line" />
+
+                <LinearLayout
+                    style="@style/layout_my_info"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/style_font_normal_black"
+                        android:minWidth="100dp"
+                        android:text="@string/str_ali_account_id" />
+
+                    <EditText
+                        android:id="@+id/etAccountId"
+                        style="@style/style_edit_login"
+                        android:hint="@string/str_ali_account_id_tip"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/style_horizon_line_blue"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvGetAccountId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:minWidth="100dp"
+                    android:paddingBottom="@dimen/dp_4"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_4"
+                    android:text="@string/str_ali_account_id_get"
+                    android:textColor="@color/bg_btn_normal"
+                    android:textSize="@dimen/font_small"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWeChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout style="@style/layout_my_info">
+
+                    <TextView
+                        android:id="@+id/tvWechatAccount"
+                        style="@style/style_font_normal_black"
+                        android:minWidth="100dp"
+                        android:text="@string/str_wechat_account" />
+
+                    <EditText
+                        android:id="@+id/etWechatAccount"
+                        style="@style/style_edit_login"
+                        android:hint="@string/str_wechat_tip" />
+
+                </LinearLayout>
+
+                <View style="@style/style_horizon_line" />
+
+                <LinearLayout style="@style/layout_my_info">
+
+                    <TextView
+                        style="@style/style_font_normal_black"
+                        android:minWidth="100dp"
+                        android:text="@string/str_wechat_account_nickname" />
+
+                    <EditText
+                        android:id="@+id/tvWechatAccountNickName"
+                        style="@style/style_edit_login"
+                        android:hint="@string/str_wechat_tip_nickname" />
+
+                </LinearLayout>
+
+                <View style="@style/style_horizon_line" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    style="@style/style_font_normal_black"
+                    android:minWidth="100dp"
+                    android:text="@string/str_rec_code" />
+
+                <ImageView
+                    android:id="@+id/ivIdFace"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_upload" />
+            </LinearLayout>
+
+            <View style="@style/style_horizon_line" />
+
+            <LinearLayout style="@style/layout_my_info">
+
+                <TextView
+                    style="@style/style_font_normal_black"
+                    android:minWidth="90dp"
+                    android:text="@string/str_account_day_input" />
+
+                <EditText
+                    android:id="@+id/etDay"
+                    style="@style/style_edit_login"
+                    android:hint="@string/str_account_day_input_tag"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <View style="@style/style_horizon_line" />
+
+            <LinearLayout
+                style="@style/layout_my_info"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/style_font_normal_black"
+                    android:minWidth="90dp"
+                    android:text="@string/str_account_wart" />
+
+                <EditText
+                    android:id="@+id/etWarn"
+                    style="@style/style_edit_login"
+                    android:hint="@string/str_account_wart_input" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/style_horizon_line"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvConfirm"
+                style="@style/style_btn_option_normal"
+                android:layout_margin="20dp"
+                android:text="@string/str_next" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

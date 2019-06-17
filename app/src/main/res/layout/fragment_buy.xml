@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include layout="@layout/view_sell_buy" />
+
+            <LinearLayout
+                style="@style/style_layout"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="18dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/str_pay_way"
+                    android:textColor="@color/font_main_content"
+                    android:textSize="@dimen/font_small" />
+
+                <TextView
+                    android:id="@+id/tvPayWay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@mipmap/icon_bank"
+                    android:drawablePadding="2dp"
+                    android:drawableRight="@mipmap/icon_drop"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:text=""
+                    android:textSize="@dimen/font_small" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPay"
+                style="@style/style_btn_option_normal"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:text="@string/str_pay" />
+
+            <TextView
+                android:id="@+id/tvPay"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ripple_btn_global_option_corner_white_selector"
+                android:gravity="center"
+                android:text="@string/str_cancel"
+                android:textColor="@color/font_main_title"
+                android:textSize="@dimen/font_normal" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

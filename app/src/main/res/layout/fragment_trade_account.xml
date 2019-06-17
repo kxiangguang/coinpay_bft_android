@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/img_bg_trade_count"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/style_font_normal"
+                android:layout_gravity="center_vertical"
+                android:text="@string/str_base_account"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                style="@style/style_font_normal_weight"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:text="@string/str_all_assets"
+                android:textColor="@color/font_wallet_tag"
+                android:textSize="@dimen/font_mini" />
+
+            <ImageView
+                android:id="@+id/ivTradeEye"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|center_vertical"
+                android:padding="6dp"
+                android:src="@mipmap/icon_eye_open" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCount"
+            style="@style/style_font_normal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/font_lager"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCny"
+                style="@style/style_font_normal_weight"
+                android:gravity="left"
+                android:textColor="@color/font_wallet_tag"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:id="@+id/tvFrozen"
+                style="@style/style_font_normal"
+                android:gravity="left"
+                android:text="保证金"
+                android:textColor="@color/font_wallet_tag"
+                android:textSize="@dimen/font_small" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvRechargeTrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:drawableLeft="@mipmap/icon_recharge"
+                android:drawablePadding="5dp"
+                android:gravity="left"
+                android:text="@string/str_recharge"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/tvExtractTrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@mipmap/icon_extract"
+                android:drawablePadding="5dp"
+                android:text="@string/str_extract"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_15sp" />
+
+            <TextView
+                android:id="@+id/tvTranferTrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@mipmap/icon_transfer"
+                android:drawablePadding="5dp"
+                android:text="@string/str_transfer"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_15sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/evSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:drawableLeft="@mipmap/icon_search"
+            android:drawablePadding="10dp"
+            android:hint="@string/str_search_assets"
+            android:singleLine="true"
+            android:textColor="@color/font_main_title"
+            android:textColorHint="@color/font_hint"
+            android:textSize="@dimen/font_mini" />
+
+        <CheckBox
+            android:id="@+id/cbHide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="@string/str_hide"
+            android:textColor="@color/font_hint"
+            android:textSize="@dimen/font_mini" />
+    </LinearLayout>
+
+    <ImageView style="@style/style_horizon_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
